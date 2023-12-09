@@ -2,7 +2,7 @@ import base64
 
 import dropbox
 
-token = "sl.BrZZ1kBChdK1URYPkbC65kligtqdBxSQ_kgg3CvWCOM2Vh0ZOhsHKkROAL_Romq2Co2bi9VwLHoLaNMUO86eoRNSZnWFwubycw4mM7sHzzWuFLqwlcnFXVUAxI4vuvxZDL_PdBJRkS_zTEKY2TJzhWo"
+token = "sl.BrYngWLFnOHlhzFqH0cMTIYgfxgVvKgLiMvgTIuBJubhhGbZEvBf6Zu4OrDUDwgoHrrItFUb8S5PVtOda5J5rt_f8ZcZVra6yXV3FLY6Nl8ej-hZ814v_8vCBIkOF6USfjsHupAjS7kk2kpU9WzY5HM"
 
 dbx = dropbox.Dropbox(token)
 
