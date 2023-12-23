@@ -1,6 +1,7 @@
 from airtable_handler import add_flashcard_records, list_files_in_table, get_flashcards_to_create
 from dropbox_manager import get_file_by_name, list_files_in_folder
 from open_ai_helper import extract_words_from_file, format_extracted_words, create_flashcard
+from anki_helper import add_flashcards_to_deck
 
 files_in_dropbox = list_files_in_folder()
 files_in_airtable = list_files_in_table()
@@ -25,4 +26,5 @@ files_to_process = get_list_of_db_unprocessed_files(files_in_dropbox, files_in_a
 create_flashcard_records(files_to_process)
 
 
-# get_flashcards_to_create()
+list_of_flashcards = get_flashcards_to_create()
+add_flashcards_to_deck(list_of_flashcards)
